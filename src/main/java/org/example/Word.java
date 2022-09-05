@@ -37,4 +37,14 @@ public class Word {
     public void setMeaning(String meaning){
         this.meaning = meaning;
     }
+
+    @Override
+    public String toString()
+    {
+        String sLevel = "";
+        for (int i=0; i<level; i++) sLevel +="*";
+        String str = String.format("%-3s", sLevel)
+        + String.format("%15s", word) + " " + meaning;
+        return str;
+    }
 }
