@@ -32,10 +32,10 @@ public class WordManager {
                 wordCRUD.listAll();
             }
             if(menu==2) {
-
+                wordCRUD.searchLevel();
             }
             if(menu==3) {
-
+                wordCRUD.searchWord();
             }
             if(menu==4){
                 //create
