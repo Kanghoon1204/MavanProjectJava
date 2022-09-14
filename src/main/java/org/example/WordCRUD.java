@@ -79,12 +79,18 @@ public class WordCRUD implements ICRUD{
         System.out.print("=> 수정할 번호 선택 : ");
         int id = s.nextInt();
         s.nextLine(); // 숫자를 받고 뒤에 공백(엔터)로 넘어가는것을 막기위해.
-
         System.out.print("=> 뜻 입력 : ");
-        String meaning = s.nextLine();
-        Word word = list.get(idlist.get(id-1));
-        word.setMeaning(meaning);
-        System.out.println("단어가 수정되었습니다.");
+        if (idlist.size() >= id)
+        {
+            String meaning = s.nextLine();
+            Word word = list.get(idlist.get(id-1));
+            word.setMeaning(meaning);
+            System.out.println("단어가 수정되었습니다.");
+        }
+        else
+        {
+            System.out.println("수정 될 단어가 없습니다.");
+        }
     }
 
     public void deleteItem() {
