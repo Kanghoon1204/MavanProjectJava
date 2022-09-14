@@ -1,0 +1,38 @@
+3|superintendent|관리자, 감독관
+1|electric|전기의, 전기를 생산하는
+2|equipment|장비, 용품
+1|pole|기둥, 장대
+2|actually|사실은
+1|again|다시
+2|almost|거의
+1|already|벌써
+2|alright|괜찮다
+1|also|또
+1|always|항상
+1|and|그리고
+1|angry|화가나다
+1|animal|동물
+2|another|또하나, 다른
+2|anything|어느 것
+3|are|이다
+3|at|에-전치사
+1|bad|나쁘다
+2|badly|심하게
+3|because|왜냐하면
+1|beginner|초보자
+3|beside|옆
+2|best|최고
+3|better|좋다
+2|big|크다
+3|future|미래
+3|garbage|쓰레기
+3|goat|산양
+1|good|좋다
+2|grass|잔디
+1|green|녹색
+1|happy|행복하다
+3|has|소유하다
+2|heavy|무겁다
+3|her's|그녀의 것
+2|herself|그녀 자신
+3|high|높다

@@ -1,9 +1,14 @@
 package org.example;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class WordCRUD implements ICRUD{
     ArrayList <Word> list;
     Scanner s;
+    final String fname = "Dictionary.txt";
     WordCRUD(Scanner s)
     {
         list = new ArrayList<>();
@@ -97,10 +102,37 @@ public class WordCRUD implements ICRUD{
         String ans = s.next();
         if(ans.equalsIgnoreCase("y"))
         {
-            list.remove((int)idlist.get(id-1));//
+            list.remove((int)idlist.get(id-1));// (int)를 붙혀줘야 정상적으로 작동한다.
             System.out.println("단어가 삭제되었습니다. ");
         }
         else
             System.out.println("취소되었습니다.");
     }
+    public void loadFile() {
+        try {
+            BufferedReader br= new BufferedReader(new FileReader(fname));
+            String line;
+            int count = 0;
+
+            while(true)
+            {
+                line = br.readLine();
+                if(line == null) break;
+
+                String data[] = line.split("\\|"); // '|'를 이용해서 나누겠다.
+                int level = Integer.parseInt(data[0]); //문자열을 숫자로 바꿔주는
+                String word = data[1];
+                String meaning = data[2];
+                list.add(new Word(0, level, word, meaning));
+                count++;
+            }
+            br.close();
+            System.out.println("==>" + count + "개 로딩 완료!!!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
 }

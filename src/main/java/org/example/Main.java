@@ -9,3 +9,6 @@ public class Main {
         new WordManager().start();
     }
 }
+
+// 함수생성 | 파일명(저장위치) | 파일 포맷
+// 단어레벨|단어|단어뜻
