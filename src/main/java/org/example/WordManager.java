@@ -27,13 +27,30 @@ public class WordManager {
             int menu = selectMenu();
             System.out.println(menu);
             if(menu==0) break;
+            if(menu==1) {
+                wordCRUD.listAll();
+            }
+            if(menu==2) {
+
+            }
+            if(menu==3) {
+
+            }
             if(menu==4){
                 //create
                 wordCRUD.addWord();
             }
-            if(menu==1) {
-                wordCRUD.listAll();
+            if(menu==5) {
+                //update
+                wordCRUD.updateItem();
             }
+            if(menu==6) {
+                //delete
+            }
+            if(menu==7) {
+
+            }
+
         }
     }
     public int selectMenu(){
