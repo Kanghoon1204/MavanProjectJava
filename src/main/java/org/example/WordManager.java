@@ -50,7 +50,7 @@ public class WordManager {
                 wordCRUD.deleteItem();
             }
             if(menu==7) {
-
+                wordCRUD.saveFile();
             }
 
         }
