@@ -154,7 +154,7 @@ public class WordCRUD implements ICRUD{
     }
 
     public void searchLevel() {
-        System.out.println("=> 원하는 레벨은? (1~3) ");
+        System.out.println("=> 원하는 레벨은? (1:초급 2:중급 3:고급 ");
         int level = s.nextInt();
         s.nextLine();
         int count = 0;

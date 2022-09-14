@@ -14,7 +14,11 @@ public class WordManager {
         {
             int menu = selectMenu();
             System.out.println(menu);
-            if(menu==0) break;
+            if(menu==0)
+            {
+                System.out.println("단어장을 종료합니다.");
+                break;
+            }
             if(menu==1) {
                 wordCRUD.listAll();
             }
